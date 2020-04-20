@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Uses environment variables to store API key
+To run in Powershell: ($env:REACT_APP_API_KEY = "YOUR_KEY_HERE") -and (npm start)
+
 ## Available Scripts
 
 In the project directory, you can run:
