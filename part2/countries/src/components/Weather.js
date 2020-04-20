@@ -7,11 +7,6 @@ const Weather = ({ capital }) => {
     const api_key = process.env.REACT_APP_API_KEY
     const URL = `http://api.weatherstack.com/current?access_key=${api_key}&query=${capital}`
 
-
-// TODO -> FETCH THE CITYS WEATHER DETAILS FROM THE API     REACT_APP_API_KEY=f8f32734864a293d84e783a6758c5547
-// http://api.weatherstack.com/current?access_key=f8f32734864a293d84e783a6758c5547&query=helsinki
-// ($env:REACT_APP_API_KEY = "f8f32734864a293d84e783a6758c5547") -and (npm start)
-
     useEffect(()=> {
         axios.get(`http://api.weatherstack.com/current?access_key=${api_key}&query=${capital}`)
             .then(response => {
